@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-mono: "Cascadia Mono", "Segoe UI Mono", ui-monospace, monospace;
+  --color-paper: #f3efe6;
+  --color-ink: #17211e;
+  --color-panel: #121a17;
+  --color-card: #fffdf8;
+  --color-line: #e4dccf;
+  --color-muted: #66706b;
+  --color-accent: #d4532b;
+  --color-accent-deep: #b5411d;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(212, 83, 43, 0.09), transparent 28%),
+    linear-gradient(#f7f3eb, #efe7da);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
